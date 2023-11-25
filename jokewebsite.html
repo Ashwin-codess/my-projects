@@ -1,0 +1,98 @@
+<html>
+<link rel="stylesheet" href="jokewebsite.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+<body>
+
+    <div class="top">
+        <div class="head1">
+            <h1>Hey there wanna hear jokes?!!</h1>
+        </div>
+        <p class="first">
+            Then you are in the right place!!,
+            one click for one joke,
+        </p>
+        <div class="click">
+            <p class="click2" id="demo" onclick="myFunction()">click here</p>
+        </div>
+    </div>
+    <div class="below">
+        <p class="joke" id="texto"></p>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            const jokes = ['What is fast, loud and crunchy? A rocket chip.',
+                , ' How does the ocean say hi? It waves!'
+                , ' What do you call a couple of chimpanzees sharing an Amazon account? PRIME-mates.'
+                , ' Why did the teddy bear say no to dessert? Because she was stuffed.'
+
+                , ' Why did the soccer player take so long to eat dinner? Because he thought he couldn’t use his hands.'
+
+                , ' Name the kind of tree you can hold in your hand? A palm tree!'
+
+                , ' What do birds give out on Halloween? Tweets.'
+                , 'What has ears but cannot hear? A cornfield.'
+
+                , ' What’s a cat’s favorite dessert? A bowl full of mice-cream.'
+
+                , ' Where did the music teacher leave her keys? In the piano!'
+
+                , ' What did the policeman say to his hungry stomach? “Freeze. You’re under a vest.”'
+
+                , ' What did the left eye say to the right eye? Between us, something smells!'
+
+                , ' What do you call a guy who’s really loud? Mike.'
+
+                , ' Why do birds fly south in the winter? It’s faster than walking!'
+
+                , 'What did the lava say to his girlfriend? “I lava you!”'
+
+                , ' Why did the student eat his homework? Because the teacher told him it was a piece of cake.'
+
+                , ' What did Yoda say when he saw himself in 4k? HDMI.'
+
+                , ' Which superhero hits home runs? Batman!'
+                , ' What’s Thanos’ favorite app on his phone? Snapchat.'
+
+                , ' Sandy’s mum has four kids; North, West, East. What is the name of the fourth child? Sandy, obviously!'
+
+                , ' What is a room with no walls? A mushroom.'
+                , 'What is brown, hairy and wears sunglasses? A coconut on vacation.'
+
+                , ' Why is a football stadium always cold? It has lots of fans!'
+
+                , '  What did one math book say to the other? “I’ve got so many problems.”'
+
+                , ' What did the Dalmatian say after lunch? That hit the spot!'
+
+                , ' What do you call two bananas on the floor? Slippers.'
+
+                , ' Why did the chicken cross the playground? To get to the other slide.'
+
+                , ' Why do ducks have feathers on their tails? To cover their buttquacks.'
+
+                , ' How does a vampire start a letter? “Tomb it may concern…”'
+
+                , ' A plane crashed in the jungle and every single person died. Who survived? Married couples.'
+
+                , ' What kind of math do birds love? Owl-gebra!'
+
+            ]
+
+            document.getElementById('texto').innerHTML = jokes[Math.floor(Math.random() * 30) + 1];
+        }
+    </script>
+
+
+</body>
+
+
+</html>
